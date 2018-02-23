@@ -95,6 +95,6 @@ qmake 是为 Qt 量身打造的，使用起来非常方便，但是cmake功能�
 
 [GNU工具链](https://zh.wikipedia.org/wiki/GNU%E5%B7%A5%E5%85%B7%E9%93%BE)
 
-[gcc]https://zh.wikipedia.org/wiki/GCC
+[gcc](https://zh.wikipedia.org/wiki/GCC)
 
-[Cygwin]https://zh.wikipedia.org/wiki/Cygwin
+[Cygwin](https://zh.wikipedia.org/wiki/Cygwin)
