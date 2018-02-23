@@ -36,6 +36,10 @@ Clang（发音为/ˈklæŋ/类似英文单字clang[1]） 是一个C、C++、Obje
 
 Clang项目包括Clang前端和Clang静态分析器等。[2]
 
+性能
+测试证明Clang编译Objective-C代码时速度为GCC的3倍[4]，还能针对用户发生的编译错误准确地给出建议[5]。
+参考 [wiki/Clang](https://zh.wikipedia.org/wiki/Clang)
+
 目录 
 1	概述
 2	性能
@@ -49,7 +53,11 @@ Clang项目包括Clang前端和Clang静态分析器等。[2]
 
 Clang本身性能优异，其生成的AST所耗用掉的内存仅仅是GCC的20%左右。2014年1月发行的FreeBSD 10.0版将Clang/LLVM作为默认编译器[3]。
 
+## Boost C++ Libraries
 
+Boost C++ 库（Libraries）是一组扩充C++功能的经过同行评审（Peer-reviewed）且开放源代码程序库。大多数的函数为了能够以开放源代码、封闭项目的方式运作，而授权于Boost软件许可协议（Boost Software License）之下。许多Boost的开发人员是来自C++标准委员会，而部分的Boost库成为C++的TR1标准之一。[1]
+
+为了要确保库的效率与弹性，Boost广泛的使用模板（template）功能。而它是针对各式领域的C++用户与应用领域（Application Domain）上，包含的库类别从像smart_ptr 库这种类通用库，到像是文件系统的操作系统抽象层，甚至能够利用Boost来开发额外的库或是给高级的C++用户利用，像是MPL。
 
 ## make
 
@@ -98,3 +106,7 @@ qmake 是为 Qt 量身打造的，使用起来非常方便，但是cmake功能�
 [gcc](https://zh.wikipedia.org/wiki/GCC)
 
 [Cygwin](https://zh.wikipedia.org/wiki/Cygwin)
+
+[gcc](https://zh.wikipedia.org/wiki/GCC)
+
+[wiki](https://zh.wikipedia.org/wiki/Boost_C%2B%2B_Libraries)
