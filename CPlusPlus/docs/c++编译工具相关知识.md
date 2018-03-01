@@ -53,7 +53,7 @@ Clang项目包括Clang前端和Clang静态分析器等。[2]
 
 Clang本身性能优异，其生成的AST所耗用掉的内存仅仅是GCC的20%左右。2014年1月发行的FreeBSD 10.0版将Clang/LLVM作为默认编译器[3]。
 
-##ICC
+## ICC
 
 Intel C++编译器（英语：Intel C++ Compiler），经常被称为icc 或 icl，一种C语言与C++的编译器，可以在Mac OS X，Linux与Microsoft Windows上运行，由英特尔公司研发。
 对于IA-32与Intel x86-64架构，这个编译器能产生优化的代码，但是对于非Intel但是兼容于Intel架构的处理器，如AMD处理器，这个编译器就无法产出优化的代码。针对IA-64（Itanium 2）处理器，这个编译器的特定版本（11.1版），适用于发展在Linux平台上的应用程序。[icc](https://zh.wikipedia.org/wiki/Intel_C%2B%2B%E7%B7%A8%E8%AD%AF%E5%99%A8)
