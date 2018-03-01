@@ -53,6 +53,12 @@ Clang项目包括Clang前端和Clang静态分析器等。[2]
 
 Clang本身性能优异，其生成的AST所耗用掉的内存仅仅是GCC的20%左右。2014年1月发行的FreeBSD 10.0版将Clang/LLVM作为默认编译器[3]。
 
+##ICC
+
+Intel C++编译器（英语：Intel C++ Compiler），经常被称为icc 或 icl，一种C语言与C++的编译器，可以在Mac OS X，Linux与Microsoft Windows上运行，由英特尔公司研发。
+对于IA-32与Intel x86-64架构，这个编译器能产生优化的代码，但是对于非Intel但是兼容于Intel架构的处理器，如AMD处理器，这个编译器就无法产出优化的代码。针对IA-64（Itanium 2）处理器，这个编译器的特定版本（11.1版），适用于发展在Linux平台上的应用程序。[icc](https://zh.wikipedia.org/wiki/Intel_C%2B%2B%E7%B7%A8%E8%AD%AF%E5%99%A8)
+Intel Compiler曾经被指控编译出来的Code会检查目标电脑的CPU Vendor ID，如果不是Genuine Intel(Intel本身CPU的Vendor ID)，就会刻意“反优化”代码，造成在非Intel CPU的电脑上运行性能低落。根据测试，这个差异可以高达47%。这不仅仅是“针对Intel优化”而已，而是刻意的反优化竞争对手的code。这同时也替Intel惹来了反托拉斯法的调查。[3]
+
 ## Boost C++ Libraries
 
 Boost C++ 库（Libraries）是一组扩充C++功能的经过同行评审（Peer-reviewed）且开放源代码程序库。大多数的函数为了能够以开放源代码、封闭项目的方式运作，而授权于Boost软件许可协议（Boost Software License）之下。许多Boost的开发人员是来自C++标准委员会，而部分的Boost库成为C++的TR1标准之一。[1]
