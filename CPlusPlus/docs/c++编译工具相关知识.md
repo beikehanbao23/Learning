@@ -101,7 +101,40 @@ qmake 是为 Qt 量身打造的，使用起来非常方便，但是cmake功能�
 
 不同平台有不同的toolchain，如gcc，msvc，ndk gcc，clang，要便于切换
 
+## Cygwin [链接](https://zh.wikipedia.org/wiki/Cygwin)
 
+Cygwin是许多自由软件的集合，最初由Cygnus Solutions开发，用于各种版本的Microsoft Windows上，运行类UNIX系统。Cygwin的主要目的是通过重新编译，将POSIX系统（例如Linux、BSD，以及其他Unix系统）上的软件移植到Windows上。Cygwin移植工作在Windows NT上比较好，在Windows 95和Windows 98上，相对差劲一些。目前Cygwin由Red Hat等负责维护。
+
+目录 
+1	简介
+2	历史
+3	参见
+4	外部链接
+简介
+Cygwin包括了一套库，该库在Win32系统下实现了POSIX系统调用的API；还有一套GNU开发工具集（比如GCC、GDB），这样可以进行简单的软件开发；还有一些UNIX系统下的常见程序。2001年，新增了X Window System。
+
+另外还有一个名为MinGW的库，可以跟Windows本地的MSVCRT库（Windows API）一起工作。MinGW占用内存、硬盘空间都比较少，能够链接到任意软件，但它对POSIX规范的实现没有Cygwin库完备。
+
+Red Hat规定，Cygwin库遵守GNU通用公共许可证，但也可以跟匹配开源定义的自由软件链接。Red Hat另有价格不菲的许可协议，这样使用Cygwin库的专属软件，就可以进行再发布。
+
+用户可以通过Cygwin Mailing Lists，订阅若干个Cygwin相关的邮件列表。
+
+历史
+Cygwin始于1995年，最初作为Cygnus工程师Steve Chamberlain的一个项目。当时Windows NT和Windows 95将COFF作为目标代码，而GNU已经支持x86和COFF，以及C语言库newlib。这样至少在理论上，可以将GCC重定向，作为交叉编译器，从而产生能在Windows上运行的可执行程序。在后来的实践中，这很快实现了。
+
+接下来的问题是如何在Windows系统中引导编译器，这需要对Unix的足够模拟，以使Autoconf的shell script可以运行，这样就用到像bash这样的shell，进而需要Fork和standard I/O。Windows含有类似的功能，所以Cygwin库只需要进行翻译调用、管理私有数据，比如文件描述符。
+
+1996年后，由于看到cygwin可以提供Windows系统上的Cygnus嵌入式工具（以往的方案是使用DJGPP），其他工程师也加入了进来。特别吸引人的是，Cygwin可以实现three-way cross-compile，例如可以在Sun工作站上build，如此就形成Windows-x-MIPS cross-compiler，这样比单纯在PC上编译要快不少。1998年起，Cygnus开始将Cygwin包作为产品来提供。
+
+## MinGW
+
+MinGW（Minimalist GNU for Windows），又称mingw32，是将GCC编译器和GNU Binutils移植到Win32平台下的产物，包括一系列头文件（Win32API）、库和可执行文件。
+另有可用于产生32位及64位Windows可执行文件的MinGW-w64项目，是从原本MinGW产生的分支[1]。如今已经独立发展[2]。
+### 历史
+MinGW是从Cygwin（1.3.3版）基础上发展而来
+
+MinGW（Minimalist GNU for Windows），又称mingw32，是将GCC编译器和GNU Binutils移植到Win32平台下的产物，包括一系列头文件（Win32API）、库和可执行文件。
+另有可用于产生32位及64位Windows可执行文件的MinGW-w64项目，是从原本MinGW产生的分支[1]。如今已经独立发展[2]。
 
 #### 参考：
 
