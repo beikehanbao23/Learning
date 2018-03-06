@@ -7,4 +7,5 @@ set(SRC
 	test.cpp
 )
 
+ADD_SUBDIRECTORY(pointer)
 ADD_EXECUTABLE(demo.exe test.cpp)
