@@ -5,12 +5,17 @@ var center = [
   [8.541147, 47.376333, 12]
 ][Math.floor(Math.random() * 4)];
 
+// center =  [19.62997291, 41.725438, 7];
+center =  [121.725438, 25, 12];
+console.log(center);
 var domain = 'https://maps.tilehosting.com';
+domain = 'http://127.0.0.1';
 var key = 'alS7XjesrAd6uvek9nRE';
 
 if (mapboxgl.supported()) {
   var maps = {
-    'klokantech-basic': domain + '/styles/basic/style.json?key=' + key,
+    // 'klokantech-basic': domain + '/styles/basic/style.json?key=' + key,
+    'klokantech-basic': 'style/style.json?key=' + key,
     'dark-matter': domain + '/styles/darkmatter/style.json?key=' + key,
     'positron': domain + '/styles/positron/style.json?key=' + key,
     'bright': domain + '/styles/bright/style.json?key=' + key
@@ -47,10 +52,10 @@ if (mapboxgl.supported()) {
   document.querySelector('.map-switchers').style.display = 'none';
 }
 
-document.getElementById('phone').addEventListener('click', function () {
-  if (this.className == 'open') {
-    this.className = '';
-  } else {
-    this.className = 'open';
-  }
-});
+// document.getElementById('phone').addEventListener('click', function () {
+//   if (this.className == 'open') {
+//     this.className = '';
+//   } else {
+//     this.className = 'open';
+//   }
+// });
